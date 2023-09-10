@@ -1,0 +1,6 @@
+*
+!/.github/workflows/*
+!/docs/*
+!/Air_Quality_Analysis.ipynb
+!/README.md
+!/requirements.txt

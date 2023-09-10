@@ -1,0 +1,2364 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1bef3d457644e2f79c04f2eac1e5d3e5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1bef3d457644e2f79c04f2eac1e5d3e5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1bef3d457644e2f79c04f2eac1e5d3e5 = L.map(
+                "map_1bef3d457644e2f79c04f2eac1e5d3e5",
+                {
+                    center: [-2.5, 117.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7b3c5595ec33d3e403c04f8882c6a620 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca target=\"_blank\" href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var marker_e5e5b512e065a6a116232bc09a5d3b01 = L.marker(
+                [5.89372, 116.04327],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_4bb5564092efb6ea8745676350a712d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e5e5b512e065a6a116232bc09a5d3b01.setIcon(icon_4bb5564092efb6ea8745676350a712d9);
+        
+    
+        var popup_8eda359c2ff9725abd3fd293c0ca89c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4c8d462cdf6cea03d47882cf1a2bcee = $(`<div id="html_e4c8d462cdf6cea03d47882cf1a2bcee" style="width: 100.0%; height: 100.0%;">Station: Kota Kinabalu, Sabah, Malaysia AQI=38</div>`)[0];
+                popup_8eda359c2ff9725abd3fd293c0ca89c4.setContent(html_e4c8d462cdf6cea03d47882cf1a2bcee);
+            
+        
+
+        marker_e5e5b512e065a6a116232bc09a5d3b01.bindPopup(popup_8eda359c2ff9725abd3fd293c0ca89c4)
+        ;
+
+        
+    
+    
+            var marker_8ca248bdbc5e422409b05ad71961f0a9 = L.marker(
+                [1.919323, 102.866618],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_c3b7a51d6d935600b1d6a63ce9014521 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8ca248bdbc5e422409b05ad71961f0a9.setIcon(icon_c3b7a51d6d935600b1d6a63ce9014521);
+        
+    
+        var popup_403f8007aac8b50b6605a4d5e1fd2a63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_940a9362f731ed397d4c494713f9b7f3 = $(`<div id="html_940a9362f731ed397d4c494713f9b7f3" style="width: 100.0%; height: 100.0%;">Station: Batu Pahat, Johor, Malaysia AQI=47</div>`)[0];
+                popup_403f8007aac8b50b6605a4d5e1fd2a63.setContent(html_940a9362f731ed397d4c494713f9b7f3);
+            
+        
+
+        marker_8ca248bdbc5e422409b05ad71961f0a9.bindPopup(popup_403f8007aac8b50b6605a4d5e1fd2a63)
+        ;
+
+        
+    
+    
+            var marker_3acdc84a171a0cc611530b48d419f545 = L.marker(
+                [3.321308, 101.256242],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_698811af6669f86e016d8710c96efcd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3acdc84a171a0cc611530b48d419f545.setIcon(icon_698811af6669f86e016d8710c96efcd6);
+        
+    
+        var popup_1fd2c74d1a099dbc6c621c8bf006c519 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27bad57d4b2b0e05fa3449739b16bbd8 = $(`<div id="html_27bad57d4b2b0e05fa3449739b16bbd8" style="width: 100.0%; height: 100.0%;">Station: Kuala Selangor, Selangor, Malaysia AQI=56</div>`)[0];
+                popup_1fd2c74d1a099dbc6c621c8bf006c519.setContent(html_27bad57d4b2b0e05fa3449739b16bbd8);
+            
+        
+
+        marker_3acdc84a171a0cc611530b48d419f545.bindPopup(popup_1fd2c74d1a099dbc6c621c8bf006c519)
+        ;
+
+        
+    
+    
+            var marker_069c6a510f894cd847f0074e9780a215 = L.marker(
+                [-7.6894175, 110.38129042693],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_fb7b76d122939648a79539c1ccf0aee0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_069c6a510f894cd847f0074e9780a215.setIcon(icon_fb7b76d122939648a79539c1ccf0aee0);
+        
+    
+        var popup_e073e5c67413872825400ed5486aa10d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_300311cb62a32e0a35c143b1861efae0 = $(`<div id="html_300311cb62a32e0a35c143b1861efae0" style="width: 100.0%; height: 100.0%;">Station: Sleman, Indonesia AQI=85</div>`)[0];
+                popup_e073e5c67413872825400ed5486aa10d.setContent(html_300311cb62a32e0a35c143b1861efae0);
+            
+        
+
+        marker_069c6a510f894cd847f0074e9780a215.bindPopup(popup_e073e5c67413872825400ed5486aa10d)
+        ;
+
+        
+    
+    
+            var marker_6f65d63d6f418c940fbd674166dfe84f = L.marker(
+                [-6.9903987999999995, 110.4229104],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_ed92b61dd3035f9435e93488ff8a875b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_6f65d63d6f418c940fbd674166dfe84f.setIcon(icon_ed92b61dd3035f9435e93488ff8a875b);
+        
+    
+        var popup_8730648da01498084ebd0fffc0fee3f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_922770abb3a42e207a3568a1dd11ebad = $(`<div id="html_922770abb3a42e207a3568a1dd11ebad" style="width: 100.0%; height: 100.0%;">Station: Semarang, Indonesia AQI=96</div>`)[0];
+                popup_8730648da01498084ebd0fffc0fee3f7.setContent(html_922770abb3a42e207a3568a1dd11ebad);
+            
+        
+
+        marker_6f65d63d6f418c940fbd674166dfe84f.bindPopup(popup_8730648da01498084ebd0fffc0fee3f7)
+        ;
+
+        
+    
+    
+            var marker_586a93968b123dbbd501d4854c778514 = L.marker(
+                [-1.6318964, 103.6414547],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_e8c6e573228bfe9e4a8b2e693bb5abc1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_586a93968b123dbbd501d4854c778514.setIcon(icon_e8c6e573228bfe9e4a8b2e693bb5abc1);
+        
+    
+        var popup_56a74a7d0e1fc422246db21ecf4fa95c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c71de5b9aaf6efaf9cd739dcd7456ef4 = $(`<div id="html_c71de5b9aaf6efaf9cd739dcd7456ef4" style="width: 100.0%; height: 100.0%;">Station: Jambi, Indonesia AQI=151</div>`)[0];
+                popup_56a74a7d0e1fc422246db21ecf4fa95c.setContent(html_c71de5b9aaf6efaf9cd739dcd7456ef4);
+            
+        
+
+        marker_586a93968b123dbbd501d4854c778514.bindPopup(popup_56a74a7d0e1fc422246db21ecf4fa95c)
+        ;
+
+        
+    
+    
+            var marker_f4ceabd2eff21db7a814e9388e27d33c = L.marker(
+                [2.014498, 112.92736],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_417f5a8c3720d4a7a500375c6d52ae25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f4ceabd2eff21db7a814e9388e27d33c.setIcon(icon_417f5a8c3720d4a7a500375c6d52ae25);
+        
+    
+        var popup_bf54c1e1830d9b196d3c9c51d61be628 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c36de0c291c69cca59971c07e0d528cc = $(`<div id="html_c36de0c291c69cca59971c07e0d528cc" style="width: 100.0%; height: 100.0%;">Station: Kapit, Sarawak, Malaysia AQI=51</div>`)[0];
+                popup_bf54c1e1830d9b196d3c9c51d61be628.setContent(html_c36de0c291c69cca59971c07e0d528cc);
+            
+        
+
+        marker_f4ceabd2eff21db7a814e9388e27d33c.bindPopup(popup_bf54c1e1830d9b196d3c9c51d61be628)
+        ;
+
+        
+    
+    
+            var marker_b53f8a8386667b1e5a892a131184c0f7 = L.marker(
+                [5.339317, 116.163658],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_81525b07a6c01be17e80e216699b4402 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b53f8a8386667b1e5a892a131184c0f7.setIcon(icon_81525b07a6c01be17e80e216699b4402);
+        
+    
+        var popup_67f014f7cacb14c39600fd8f24a7337d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2351871f3b05819c4c7c09e8537e5c24 = $(`<div id="html_2351871f3b05819c4c7c09e8537e5c24" style="width: 100.0%; height: 100.0%;">Station: Keningau, Sabah, Malaysia AQI=52</div>`)[0];
+                popup_67f014f7cacb14c39600fd8f24a7337d.setContent(html_2351871f3b05819c4c7c09e8537e5c24);
+            
+        
+
+        marker_b53f8a8386667b1e5a892a131184c0f7.bindPopup(popup_67f014f7cacb14c39600fd8f24a7337d)
+        ;
+
+        
+    
+    
+            var marker_b95ac3a2980c783d62a6a64da9e9e966 = L.marker(
+                [5.811172, 102.1345],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_aa74fb2cac5d5e80e3f8a9ff69e5e870 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b95ac3a2980c783d62a6a64da9e9e966.setIcon(icon_aa74fb2cac5d5e80e3f8a9ff69e5e870);
+        
+    
+        var popup_ee8b0ada203f70a0a17e3c5ff3653a4a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c8cc718ced1f84a9e6e72648ad267c8 = $(`<div id="html_0c8cc718ced1f84a9e6e72648ad267c8" style="width: 100.0%; height: 100.0%;">Station: Tanah Merah, Kelantan, Malaysia AQI=39</div>`)[0];
+                popup_ee8b0ada203f70a0a17e3c5ff3653a4a.setContent(html_0c8cc718ced1f84a9e6e72648ad267c8);
+            
+        
+
+        marker_b95ac3a2980c783d62a6a64da9e9e966.bindPopup(popup_ee8b0ada203f70a0a17e3c5ff3653a4a)
+        ;
+
+        
+    
+    
+            var marker_637cc43c9810eb0cce5f1004adef3fd0 = L.marker(
+                [-6.1603721, 106.8473377],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_848f584b00681c9c9fbbedbe96d6b6e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_637cc43c9810eb0cce5f1004adef3fd0.setIcon(icon_848f584b00681c9c9fbbedbe96d6b6e9);
+        
+    
+        var popup_49b13288335d0a2172a45c9f78ac42ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_997873e1bc273cab516a55430b68d60c = $(`<div id="html_997873e1bc273cab516a55430b68d60c" style="width: 100.0%; height: 100.0%;">Station: Jakarta, Indonesia AQI=128</div>`)[0];
+                popup_49b13288335d0a2172a45c9f78ac42ff.setContent(html_997873e1bc273cab516a55430b68d60c);
+            
+        
+
+        marker_637cc43c9810eb0cce5f1004adef3fd0.bindPopup(popup_49b13288335d0a2172a45c9f78ac42ff)
+        ;
+
+        
+    
+    
+            var marker_f3bfb511f339532b7eb20983e87d7044 = L.marker(
+                [-3.5186763, 102.5359834],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_88dad7e03a0bdcd4cc22a4e8dc1725d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f3bfb511f339532b7eb20983e87d7044.setIcon(icon_88dad7e03a0bdcd4cc22a4e8dc1725d7);
+        
+    
+        var popup_93bc387bfbfce404a42abeb7bc768fba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8168bddec9daf6b6159eb3a60ae0e4da = $(`<div id="html_8168bddec9daf6b6159eb3a60ae0e4da" style="width: 100.0%; height: 100.0%;">Station: Bengkulu, Indonesia AQI=100</div>`)[0];
+                popup_93bc387bfbfce404a42abeb7bc768fba.setContent(html_8168bddec9daf6b6159eb3a60ae0e4da);
+            
+        
+
+        marker_f3bfb511f339532b7eb20983e87d7044.bindPopup(popup_93bc387bfbfce404a42abeb7bc768fba)
+        ;
+
+        
+    
+    
+            var marker_1628c475b2907e9f87c5057e89b50d9e = L.marker(
+                [4.5831986, 114.2212174],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_e8f6e44cf7a7165ce71b68e5b00afaea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1628c475b2907e9f87c5057e89b50d9e.setIcon(icon_e8f6e44cf7a7165ce71b68e5b00afaea);
+        
+    
+        var popup_a63c06670d2375b8d218c6a4d1bd1fe3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_696540b7ded72b9ce7067fd7728b14c7 = $(`<div id="html_696540b7ded72b9ce7067fd7728b14c7" style="width: 100.0%; height: 100.0%;">Station: Kuala Belait, Brunei AQI=14</div>`)[0];
+                popup_a63c06670d2375b8d218c6a4d1bd1fe3.setContent(html_696540b7ded72b9ce7067fd7728b14c7);
+            
+        
+
+        marker_1628c475b2907e9f87c5057e89b50d9e.bindPopup(popup_a63c06670d2375b8d218c6a4d1bd1fe3)
+        ;
+
+        
+    
+    
+            var marker_148ddf6e440ac914428ad4f5bd134caf = L.marker(
+                [2.9266449999999997, 103.419198],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_ae652652312c6100909064f94e2b34e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_148ddf6e440ac914428ad4f5bd134caf.setIcon(icon_ae652652312c6100909064f94e2b34e8);
+        
+    
+        var popup_41d5a0e7af4d174275a7b48eb8230d68 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_71c6dff8833dd65766dadd29cf705dce = $(`<div id="html_71c6dff8833dd65766dadd29cf705dce" style="width: 100.0%; height: 100.0%;">Station: Rompin, Pahang, Malaysia AQI=51</div>`)[0];
+                popup_41d5a0e7af4d174275a7b48eb8230d68.setContent(html_71c6dff8833dd65766dadd29cf705dce);
+            
+        
+
+        marker_148ddf6e440ac914428ad4f5bd134caf.bindPopup(popup_41d5a0e7af4d174275a7b48eb8230d68)
+        ;
+
+        
+    
+    
+            var marker_193c190e7b19ea53175555d5b7820ce2 = L.marker(
+                [-0.2028171, 100.315808],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_2b3c8b12a25308c1cd06dd07528cd20e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_193c190e7b19ea53175555d5b7820ce2.setIcon(icon_2b3c8b12a25308c1cd06dd07528cd20e);
+        
+    
+        var popup_7388d29e2005b81c214d8b8b8d2748e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b7509903b331777972aa1676575785b = $(`<div id="html_0b7509903b331777972aa1676575785b" style="width: 100.0%; height: 100.0%;">Station: Kototabang, Indonesia AQI=24</div>`)[0];
+                popup_7388d29e2005b81c214d8b8b8d2748e5.setContent(html_0b7509903b331777972aa1676575785b);
+            
+        
+
+        marker_193c190e7b19ea53175555d5b7820ce2.bindPopup(popup_7388d29e2005b81c214d8b8b8d2748e5)
+        ;
+
+        
+    
+    
+            var marker_a8ed852e0080cbedc00b3fae172617ba = L.marker(
+                [4.9311206, 114.9516869],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_7cbc9a8f4ff90fd77953df80e478f2f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a8ed852e0080cbedc00b3fae172617ba.setIcon(icon_7cbc9a8f4ff90fd77953df80e478f2f7);
+        
+    
+        var popup_5fc9c1063c502685b41954fe0a613521 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa39d3f27c3ff64116762e49a3a77945 = $(`<div id="html_fa39d3f27c3ff64116762e49a3a77945" style="width: 100.0%; height: 100.0%;">Station: Brunei Muara, Brunei AQI=14</div>`)[0];
+                popup_5fc9c1063c502685b41954fe0a613521.setContent(html_fa39d3f27c3ff64116762e49a3a77945);
+            
+        
+
+        marker_a8ed852e0080cbedc00b3fae172617ba.bindPopup(popup_5fc9c1063c502685b41954fe0a613521)
+        ;
+
+        
+    
+    
+            var marker_64051b3d18d370f0eca2bcdb4f7f883a = L.marker(
+                [2.914816, 101.69005],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_a3177c8ef096f615fc872317c0052b79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_64051b3d18d370f0eca2bcdb4f7f883a.setIcon(icon_a3177c8ef096f615fc872317c0052b79);
+        
+    
+        var popup_a2a0c0b66eacf33706104ccd707c4ab6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_440c79558a125b5e1726125cd7d4e207 = $(`<div id="html_440c79558a125b5e1726125cd7d4e207" style="width: 100.0%; height: 100.0%;">Station: Putrajaya, W.p. Putrajaya, Malaysia AQI=71</div>`)[0];
+                popup_a2a0c0b66eacf33706104ccd707c4ab6.setContent(html_440c79558a125b5e1726125cd7d4e207);
+            
+        
+
+        marker_64051b3d18d370f0eca2bcdb4f7f883a.bindPopup(popup_a2a0c0b66eacf33706104ccd707c4ab6)
+        ;
+
+        
+    
+    
+            var marker_31eb4989257d5632ac96c6b62d95fa85 = L.marker(
+                [3.94836, 102.366632],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_205877b62f1793580c8f6046262b8ea4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_31eb4989257d5632ac96c6b62d95fa85.setIcon(icon_205877b62f1793580c8f6046262b8ea4);
+        
+    
+        var popup_570687c28ac231cec170cc4dabcb31bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f769a8246361d97a0811ae94a2e78064 = $(`<div id="html_f769a8246361d97a0811ae94a2e78064" style="width: 100.0%; height: 100.0%;">Station: Jerantut, Pahang, Malaysia AQI=44</div>`)[0];
+                popup_570687c28ac231cec170cc4dabcb31bd.setContent(html_f769a8246361d97a0811ae94a2e78064);
+            
+        
+
+        marker_31eb4989257d5632ac96c6b62d95fa85.bindPopup(popup_570687c28ac231cec170cc4dabcb31bd)
+        ;
+
+        
+    
+    
+            var marker_e736649807d8119389f000b1603dfaa1 = L.marker(
+                [4.598064, 103.434819],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_d243e5ac50f9a5db86c0a4c90b9b5772 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e736649807d8119389f000b1603dfaa1.setIcon(icon_d243e5ac50f9a5db86c0a4c90b9b5772);
+        
+    
+        var popup_ad874ef8ee1fccaea0a59f8e3d0669cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b5afe7cebd3806f9b2bd7b116367dd0 = $(`<div id="html_6b5afe7cebd3806f9b2bd7b116367dd0" style="width: 100.0%; height: 100.0%;">Station: Paka, Terengganu, Malaysia AQI=54</div>`)[0];
+                popup_ad874ef8ee1fccaea0a59f8e3d0669cb.setContent(html_6b5afe7cebd3806f9b2bd7b116367dd0);
+            
+        
+
+        marker_e736649807d8119389f000b1603dfaa1.bindPopup(popup_ad874ef8ee1fccaea0a59f8e3d0669cb)
+        ;
+
+        
+    
+    
+            var marker_2061e5f00bb7888720f3bf452a213762 = L.marker(
+                [-0.36948415, 109.51235577106],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_45706c0417c137f81887940e5b14f908 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2061e5f00bb7888720f3bf452a213762.setIcon(icon_45706c0417c137f81887940e5b14f908);
+        
+    
+        var popup_adddb5351f716402f4417e4204501146 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b8d071165fbebba834a73c2fd539675 = $(`<div id="html_5b8d071165fbebba834a73c2fd539675" style="width: 100.0%; height: 100.0%;">Station: Supadio, Indonesia AQI=121</div>`)[0];
+                popup_adddb5351f716402f4417e4204501146.setContent(html_5b8d071165fbebba834a73c2fd539675);
+            
+        
+
+        marker_2061e5f00bb7888720f3bf452a213762.bindPopup(popup_adddb5351f716402f4417e4204501146)
+        ;
+
+        
+    
+    
+            var marker_aefdf300889232b298a98dab7743dc68 = L.marker(
+                [3.819217, 103.29655],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_5a7b1190a4def2459aadc873825190b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_aefdf300889232b298a98dab7743dc68.setIcon(icon_5a7b1190a4def2459aadc873825190b1);
+        
+    
+        var popup_64c0d9fdded003f702f3ad794832d598 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3b20f0de7de44757112cc3e345e21cf = $(`<div id="html_c3b20f0de7de44757112cc3e345e21cf" style="width: 100.0%; height: 100.0%;">Station: Indera Mahkota, Kuantan, Pahang, Malaysia AQI=62</div>`)[0];
+                popup_64c0d9fdded003f702f3ad794832d598.setContent(html_c3b20f0de7de44757112cc3e345e21cf);
+            
+        
+
+        marker_aefdf300889232b298a98dab7743dc68.bindPopup(popup_64c0d9fdded003f702f3ad794832d598)
+        ;
+
+        
+    
+    
+            var marker_9aaaf099737e50b1603651ca7a89a178 = L.marker(
+                [3.471603, 102.376406],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_0bb2dc651d0a7474d4493adc99454673 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9aaaf099737e50b1603651ca7a89a178.setIcon(icon_0bb2dc651d0a7474d4493adc99454673);
+        
+    
+        var popup_3490b4b823b7a783c5d007d73a0f5ab5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb188e0938dc0cc0d3485d9660331eed = $(`<div id="html_bb188e0938dc0cc0d3485d9660331eed" style="width: 100.0%; height: 100.0%;">Station: Temerloh, Pahang, Malaysia AQI=45</div>`)[0];
+                popup_3490b4b823b7a783c5d007d73a0f5ab5.setContent(html_bb188e0938dc0cc0d3485d9660331eed);
+            
+        
+
+        marker_9aaaf099737e50b1603651ca7a89a178.bindPopup(popup_3490b4b823b7a783c5d007d73a0f5ab5)
+        ;
+
+        
+    
+    
+            var marker_4618c01c1336294a9ab17b6d3dc4727e = L.marker(
+                [3.1390029999999998, 101.686855],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_98fd75f0f2ec75e83fdcb4f1e0a79b42 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4618c01c1336294a9ab17b6d3dc4727e.setIcon(icon_98fd75f0f2ec75e83fdcb4f1e0a79b42);
+        
+    
+        var popup_7972d1c98c833ea04ef9a90ae2f00e83 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77c8835d3feb5dfc75de29a4fb1b2536 = $(`<div id="html_77c8835d3feb5dfc75de29a4fb1b2536" style="width: 100.0%; height: 100.0%;">Station: Kuala Lumpur AQI=49</div>`)[0];
+                popup_7972d1c98c833ea04ef9a90ae2f00e83.setContent(html_77c8835d3feb5dfc75de29a4fb1b2536);
+            
+        
+
+        marker_4618c01c1336294a9ab17b6d3dc4727e.bindPopup(popup_7972d1c98c833ea04ef9a90ae2f00e83)
+        ;
+
+        
+    
+    
+            var marker_d8feae9671fbdcb30ed89c0e6f61d6a7 = L.marker(
+                [3.104717, 101.556222],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_279b8fcc15dff525ff929c2f21c3bdb8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d8feae9671fbdcb30ed89c0e6f61d6a7.setIcon(icon_279b8fcc15dff525ff929c2f21c3bdb8);
+        
+    
+        var popup_9d14edf5fd6e4606b61b622e1479456d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0fb53b3691fdaf6433ad331111fb6c5 = $(`<div id="html_b0fb53b3691fdaf6433ad331111fb6c5" style="width: 100.0%; height: 100.0%;">Station: Shah Alam, Selangor, Malaysia AQI=65</div>`)[0];
+                popup_9d14edf5fd6e4606b61b622e1479456d.setContent(html_b0fb53b3691fdaf6433ad331111fb6c5);
+            
+        
+
+        marker_d8feae9671fbdcb30ed89c0e6f61d6a7.bindPopup(popup_9d14edf5fd6e4606b61b622e1479456d)
+        ;
+
+        
+    
+    
+            var marker_b195701a0269adc6f09f012a1a5a8dc9 = L.marker(
+                [-0.7693211999999999, 100.6350004],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_6bf5b581d9b1729a1d988f1b4b6ead9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b195701a0269adc6f09f012a1a5a8dc9.setIcon(icon_6bf5b581d9b1729a1d988f1b4b6ead9b);
+        
+    
+        var popup_88f511a611a54e84346ddd0d3f6adf6d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_95734cedaae99851cffa6c511349d982 = $(`<div id="html_95734cedaae99851cffa6c511349d982" style="width: 100.0%; height: 100.0%;">Station: Tanjung Harapan, Indonesia AQI=80</div>`)[0];
+                popup_88f511a611a54e84346ddd0d3f6adf6d.setContent(html_95734cedaae99851cffa6c511349d982);
+            
+        
+
+        marker_b195701a0269adc6f09f012a1a5a8dc9.bindPopup(popup_88f511a611a54e84346ddd0d3f6adf6d)
+        ;
+
+        
+    
+    
+            var marker_2c5ef8fb2ec20bc919833680db4d4e90 = L.marker(
+                [2.314408, 111.831916],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_a6ecb7c45d98c24e94c19f94bafe5209 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2c5ef8fb2ec20bc919833680db4d4e90.setIcon(icon_a6ecb7c45d98c24e94c19f94bafe5209);
+        
+    
+        var popup_fc757aeb2751098d8004888056b27143 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7dac5d4dea334d504e2bfd292a1a9738 = $(`<div id="html_7dac5d4dea334d504e2bfd292a1a9738" style="width: 100.0%; height: 100.0%;">Station: Sibu, Sarawak, Malaysia AQI=50</div>`)[0];
+                popup_fc757aeb2751098d8004888056b27143.setContent(html_7dac5d4dea334d504e2bfd292a1a9738);
+            
+        
+
+        marker_2c5ef8fb2ec20bc919833680db4d4e90.bindPopup(popup_fc757aeb2751098d8004888056b27143)
+        ;
+
+        
+    
+    
+            var marker_b13a808be7e582aaa90d4baf11844471 = L.marker(
+                [1.470122, 103.893456],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_77c7d3e3830157f934d5a0acad723f96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b13a808be7e582aaa90d4baf11844471.setIcon(icon_77c7d3e3830157f934d5a0acad723f96);
+        
+    
+        var popup_1d58ea57b827e1d026891ca72f3a5497 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_868651e9bf17fa65bc692e2e33f9e8fe = $(`<div id="html_868651e9bf17fa65bc692e2e33f9e8fe" style="width: 100.0%; height: 100.0%;">Station: Pasir Gudang, Johor, Malaysia AQI=75</div>`)[0];
+                popup_1d58ea57b827e1d026891ca72f3a5497.setContent(html_868651e9bf17fa65bc692e2e33f9e8fe);
+            
+        
+
+        marker_b13a808be7e582aaa90d4baf11844471.bindPopup(popup_1d58ea57b827e1d026891ca72f3a5497)
+        ;
+
+        
+    
+    
+            var marker_bb3c38257993c708553da202c33d879d = L.marker(
+                [2.723381, 101.968497],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_aba38a02981eaa7bc538649433db8c02 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bb3c38257993c708553da202c33d879d.setIcon(icon_aba38a02981eaa7bc538649433db8c02);
+        
+    
+        var popup_7e64930b87251abf5bf376a60c2b5134 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_227f46cfd5ca8b31da2462661d4270ba = $(`<div id="html_227f46cfd5ca8b31da2462661d4270ba" style="width: 100.0%; height: 100.0%;">Station: Seremban, Negeri Sembilan, Malaysia AQI=44</div>`)[0];
+                popup_7e64930b87251abf5bf376a60c2b5134.setContent(html_227f46cfd5ca8b31da2462661d4270ba);
+            
+        
+
+        marker_bb3c38257993c708553da202c33d879d.bindPopup(popup_7e64930b87251abf5bf376a60c2b5134)
+        ;
+
+        
+    
+    
+            var marker_ef8cbb0de8dd84685d74b6988716589f = L.marker(
+                [3.960644, 103.382158],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_8fc61c89ea913a38e556c62a37e0280b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ef8cbb0de8dd84685d74b6988716589f.setIcon(icon_8fc61c89ea913a38e556c62a37e0280b);
+        
+    
+        var popup_6f60b92381e4d57f55ff1cbe7eff6234 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ecf69bedc7ea66964a6cb207e87c98d1 = $(`<div id="html_ecf69bedc7ea66964a6cb207e87c98d1" style="width: 100.0%; height: 100.0%;">Station: Balok Baru, Kuantan, Pahang, Malaysia AQI=60</div>`)[0];
+                popup_6f60b92381e4d57f55ff1cbe7eff6234.setContent(html_ecf69bedc7ea66964a6cb207e87c98d1);
+            
+        
+
+        marker_ef8cbb0de8dd84685d74b6988716589f.bindPopup(popup_6f60b92381e4d57f55ff1cbe7eff6234)
+        ;
+
+        
+    
+    
+            var marker_05f72c8180b3619429f21559ea09adbc = L.marker(
+                [-3.4572422, 114.8103181],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_df3c180fbd4aafb5c53422a27d45e04c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_05f72c8180b3619429f21559ea09adbc.setIcon(icon_df3c180fbd4aafb5c53422a27d45e04c);
+        
+    
+        var popup_e792e0e73133c1f75b6267f7c07dc085 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0440c1025bb957b4ffc2222b08817381 = $(`<div id="html_0440c1025bb957b4ffc2222b08817381" style="width: 100.0%; height: 100.0%;">Station: Banjarbaru, Indonesia AQI=70</div>`)[0];
+                popup_e792e0e73133c1f75b6267f7c07dc085.setContent(html_0440c1025bb957b4ffc2222b08817381);
+            
+        
+
+        marker_05f72c8180b3619429f21559ea09adbc.bindPopup(popup_e792e0e73133c1f75b6267f7c07dc085)
+        ;
+
+        
+    
+    
+            var marker_3215cd6ed78f75decfe006dfe1770e1c = L.marker(
+                [-4.9655024, 119.69284341781],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_02c2f6be91dbcc06a40563b7e868d0db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3215cd6ed78f75decfe006dfe1770e1c.setIcon(icon_02c2f6be91dbcc06a40563b7e868d0db);
+        
+    
+        var popup_db20ecce234b307168aa231aa857ed23 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f051c21f7d1106df455f259f0859b0b = $(`<div id="html_0f051c21f7d1106df455f259f0859b0b" style="width: 100.0%; height: 100.0%;">Station: Maros, Indonesia AQI=106</div>`)[0];
+                popup_db20ecce234b307168aa231aa857ed23.setContent(html_0f051c21f7d1106df455f259f0859b0b);
+            
+        
+
+        marker_3215cd6ed78f75decfe006dfe1770e1c.bindPopup(popup_db20ecce234b307168aa231aa857ed23)
+        ;
+
+        
+    
+    
+            var marker_b15476e5319af33220e983c2c27a3264 = L.marker(
+                [4.249786, 117.935864],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_f6a365c5a7ba71e9afaea031b59985f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b15476e5319af33220e983c2c27a3264.setIcon(icon_f6a365c5a7ba71e9afaea031b59985f1);
+        
+    
+        var popup_ae55c517381119ecd5dd5fcb682262a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c92b0a962799a8d6e5efb6103a02b5e6 = $(`<div id="html_c92b0a962799a8d6e5efb6103a02b5e6" style="width: 100.0%; height: 100.0%;">Station: Tawau, Sabah, Malaysia AQI=56</div>`)[0];
+                popup_ae55c517381119ecd5dd5fcb682262a3.setContent(html_c92b0a962799a8d6e5efb6103a02b5e6);
+            
+        
+
+        marker_b15476e5319af33220e983c2c27a3264.bindPopup(popup_ae55c517381119ecd5dd5fcb682262a3)
+        ;
+
+        
+    
+    
+            var marker_d61e5ae6675897d3dc4347fa037927c7 = L.marker(
+                [1.3666667, 103.8],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_d131b14c4df8e2c4a153586c366b91b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d61e5ae6675897d3dc4347fa037927c7.setIcon(icon_d131b14c4df8e2c4a153586c366b91b5);
+        
+    
+        var popup_f8c13f8d993e376f06b314aca57e9c1a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d468b54eaa20cf522b502444b087c793 = $(`<div id="html_d468b54eaa20cf522b502444b087c793" style="width: 100.0%; height: 100.0%;">Station: Central, Singapore AQI=63</div>`)[0];
+                popup_f8c13f8d993e376f06b314aca57e9c1a.setContent(html_d468b54eaa20cf522b502444b087c793);
+            
+        
+
+        marker_d61e5ae6675897d3dc4347fa037927c7.bindPopup(popup_f8c13f8d993e376f06b314aca57e9c1a)
+        ;
+
+        
+    
+    
+            var marker_4b06b4f3a8254a5ae307a0925de4dadd = L.marker(
+                [1.0456264, 104.0304535],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_7010215bfac02c7cdebc23bdd35adf36 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4b06b4f3a8254a5ae307a0925de4dadd.setIcon(icon_7010215bfac02c7cdebc23bdd35adf36);
+        
+    
+        var popup_4cb28a74fa4a440e2eaecbfef426b891 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_941c68b2a15c13fbe9ae6276c0b0d942 = $(`<div id="html_941c68b2a15c13fbe9ae6276c0b0d942" style="width: 100.0%; height: 100.0%;">Station: Batam, Indonesia AQI=90</div>`)[0];
+                popup_4cb28a74fa4a440e2eaecbfef426b891.setContent(html_941c68b2a15c13fbe9ae6276c0b0d942);
+            
+        
+
+        marker_4b06b4f3a8254a5ae307a0925de4dadd.bindPopup(popup_4cb28a74fa4a440e2eaecbfef426b891)
+        ;
+
+        
+    
+    
+            var marker_896d448ad3eb1d25b01bdbcb85ced548 = L.marker(
+                [-2.676583, 111.626448],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_25d058c0c2c1db599e9c68bac8afd784 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_896d448ad3eb1d25b01bdbcb85ced548.setIcon(icon_25d058c0c2c1db599e9c68bac8afd784);
+        
+    
+        var popup_9b9599e20e24b68fcfe7b3223d170aee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af7f0aa95d15bec9461d5e02e74ac83d = $(`<div id="html_af7f0aa95d15bec9461d5e02e74ac83d" style="width: 100.0%; height: 100.0%;">Station: Pangkalanbun, Indonesia AQI=47</div>`)[0];
+                popup_9b9599e20e24b68fcfe7b3223d170aee.setContent(html_af7f0aa95d15bec9461d5e02e74ac83d);
+            
+        
+
+        marker_896d448ad3eb1d25b01bdbcb85ced548.bindPopup(popup_9b9599e20e24b68fcfe7b3223d170aee)
+        ;
+
+        
+    
+    
+            var marker_9b5cb41eb4a8de28c66aa88fd8d68738 = L.marker(
+                [2.132809, 111.52287],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_4b5eab989f5d5ab3e477ed613520cc5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9b5cb41eb4a8de28c66aa88fd8d68738.setIcon(icon_4b5eab989f5d5ab3e477ed613520cc5e);
+        
+    
+        var popup_290d4d17483e2c52ef5616f5da7ce58f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f1e96c95dd1cf13acbac29a1923fcbe = $(`<div id="html_0f1e96c95dd1cf13acbac29a1923fcbe" style="width: 100.0%; height: 100.0%;">Station: Sarikei, Sarawak, Malaysia AQI=48</div>`)[0];
+                popup_290d4d17483e2c52ef5616f5da7ce58f.setContent(html_0f1e96c95dd1cf13acbac29a1923fcbe);
+            
+        
+
+        marker_9b5cb41eb4a8de28c66aa88fd8d68738.bindPopup(popup_290d4d17483e2c52ef5616f5da7ce58f)
+        ;
+
+        
+    
+    
+            var marker_b623f8f3635aaa30ee8171fd137749a5 = L.marker(
+                [2.441383, 101.866858],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_17000a94ec456bfea10da64a4019c55a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b623f8f3635aaa30ee8171fd137749a5.setIcon(icon_17000a94ec456bfea10da64a4019c55a);
+        
+    
+        var popup_42f9e2e2087058f560c23713a24fef62 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b15ac35149e1207c10914898ee51112a = $(`<div id="html_b15ac35149e1207c10914898ee51112a" style="width: 100.0%; height: 100.0%;">Station: Port Dickson, Negeri Sembilan, Malaysia AQI=48</div>`)[0];
+                popup_42f9e2e2087058f560c23713a24fef62.setContent(html_b15ac35149e1207c10914898ee51112a);
+            
+        
+
+        marker_b623f8f3635aaa30ee8171fd137749a5.bindPopup(popup_42f9e2e2087058f560c23713a24fef62)
+        ;
+
+        
+    
+    
+            var marker_65d8d2ed0faad1107412cb6fbd02a0b4 = L.marker(
+                [3.687758, 101.524494],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_d2917940207a96c2af17743e2d1cb37a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_65d8d2ed0faad1107412cb6fbd02a0b4.setIcon(icon_d2917940207a96c2af17743e2d1cb37a);
+        
+    
+        var popup_36aac0412ae1dcd6005117120b5c957e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a91921de114167fbdca6706cdb7692d0 = $(`<div id="html_a91921de114167fbdca6706cdb7692d0" style="width: 100.0%; height: 100.0%;">Station: Tanjung Malim, Perak, Malaysia AQI=27</div>`)[0];
+                popup_36aac0412ae1dcd6005117120b5c957e.setContent(html_a91921de114167fbdca6706cdb7692d0);
+            
+        
+
+        marker_65d8d2ed0faad1107412cb6fbd02a0b4.bindPopup(popup_36aac0412ae1dcd6005117120b5c957e)
+        ;
+
+        
+    
+    
+            var marker_947645d3d22d637dc879565d4ab7edd1 = L.marker(
+                [0.5070677, 101.4477793],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_ffccb95babe3abd8f47c152720186bed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_947645d3d22d637dc879565d4ab7edd1.setIcon(icon_ffccb95babe3abd8f47c152720186bed);
+        
+    
+        var popup_4a0eaff9512a131d9657aebceaabc3c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb8260fabe5dc36ec06e48f85514433a = $(`<div id="html_eb8260fabe5dc36ec06e48f85514433a" style="width: 100.0%; height: 100.0%;">Station: Pekanbaru, Indonesia AQI=70</div>`)[0];
+                popup_4a0eaff9512a131d9657aebceaabc3c1.setContent(html_eb8260fabe5dc36ec06e48f85514433a);
+            
+        
+
+        marker_947645d3d22d637dc879565d4ab7edd1.bindPopup(popup_4a0eaff9512a131d9657aebceaabc3c1)
+        ;
+
+        
+    
+    
+            var marker_c124d59f4b8daa82e4c3844da4fee5ad = L.marker(
+                [5.308094, 103.120392],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_4635da930e15f9769699857c301d24d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c124d59f4b8daa82e4c3844da4fee5ad.setIcon(icon_4635da930e15f9769699857c301d24d6);
+        
+    
+        var popup_9872dab090370b1089590696818f6d3d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d245e7cd5cb1ce37751eb4beea1cab24 = $(`<div id="html_d245e7cd5cb1ce37751eb4beea1cab24" style="width: 100.0%; height: 100.0%;">Station: Kuala Terengganu, Terengganu, Malaysia AQI=54</div>`)[0];
+                popup_9872dab090370b1089590696818f6d3d.setContent(html_d245e7cd5cb1ce37751eb4beea1cab24);
+            
+        
+
+        marker_c124d59f4b8daa82e4c3844da4fee5ad.bindPopup(popup_9872dab090370b1089590696818f6d3d)
+        ;
+
+        
+    
+    
+            var marker_80d6937887b79bcea72959d05df68cf5 = L.marker(
+                [5.748449, 102.515632],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_2bfb9db3acaeac92fda5b3e39a069f8e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_80d6937887b79bcea72959d05df68cf5.setIcon(icon_2bfb9db3acaeac92fda5b3e39a069f8e);
+        
+    
+        var popup_17fdd996d00276aed4ed97f021d8203a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef6a20ff29f88fcb45a009aa3774aeef = $(`<div id="html_ef6a20ff29f88fcb45a009aa3774aeef" style="width: 100.0%; height: 100.0%;">Station: Besut, Terengganu, Malaysia AQI=54</div>`)[0];
+                popup_17fdd996d00276aed4ed97f021d8203a.setContent(html_ef6a20ff29f88fcb45a009aa3774aeef);
+            
+        
+
+        marker_80d6937887b79bcea72959d05df68cf5.bindPopup(popup_17fdd996d00276aed4ed97f021d8203a)
+        ;
+
+        
+    
+    
+            var marker_eae98260a0afefbd4926f2176d551177 = L.marker(
+                [2.816689, 101.623158],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_eaedfb6276398f58ca28efc65b181aeb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_eae98260a0afefbd4926f2176d551177.setIcon(icon_eaedfb6276398f58ca28efc65b181aeb);
+        
+    
+        var popup_e20278107e1ebb7143c0b6868ce6db6a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a1791acaf2407359fc0a59cd080f5d5 = $(`<div id="html_2a1791acaf2407359fc0a59cd080f5d5" style="width: 100.0%; height: 100.0%;">Station: Banting, Selangor, Malaysia AQI=59</div>`)[0];
+                popup_e20278107e1ebb7143c0b6868ce6db6a.setContent(html_2a1791acaf2407359fc0a59cd080f5d5);
+            
+        
+
+        marker_eae98260a0afefbd4926f2176d551177.bindPopup(popup_e20278107e1ebb7143c0b6868ce6db6a)
+        ;
+
+        
+    
+    
+            var marker_604ea78c25c70fb821e3893cb79fa430 = L.marker(
+                [3.133169, 101.608011],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_a6fcb5dce7444abe3b1edc4b36e0c212 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_604ea78c25c70fb821e3893cb79fa430.setIcon(icon_a6fcb5dce7444abe3b1edc4b36e0c212);
+        
+    
+        var popup_4a0f6f9a74e3413ee579df2f983f0a14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4e918464f79e932f1613efb60ef36da = $(`<div id="html_b4e918464f79e932f1613efb60ef36da" style="width: 100.0%; height: 100.0%;">Station: Petaling Jaya, Selangor, Malaysia AQI=52</div>`)[0];
+                popup_4a0f6f9a74e3413ee579df2f983f0a14.setContent(html_b4e918464f79e932f1613efb60ef36da);
+            
+        
+
+        marker_604ea78c25c70fb821e3893cb79fa430.bindPopup(popup_4a0f6f9a74e3413ee579df2f983f0a14)
+        ;
+
+        
+    
+    
+            var marker_03f44ac1d3d3fb10224e539085dc1a6a = L.marker(
+                [5.4218918, 95.4463322],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_66ac6d765e73160736d5550e3d561c4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_03f44ac1d3d3fb10224e539085dc1a6a.setIcon(icon_66ac6d765e73160736d5550e3d561c4e);
+        
+    
+        var popup_679a9bedc5c3fcde4ff58f33d4e26fb5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_318f63f2f857f9bc4e1d35ce2cb5b9ff = $(`<div id="html_318f63f2f857f9bc4e1d35ce2cb5b9ff" style="width: 100.0%; height: 100.0%;">Station: Indrapuri, Indonesia AQI=94</div>`)[0];
+                popup_679a9bedc5c3fcde4ff58f33d4e26fb5.setContent(html_318f63f2f857f9bc4e1d35ce2cb5b9ff);
+            
+        
+
+        marker_03f44ac1d3d3fb10224e539085dc1a6a.bindPopup(popup_679a9bedc5c3fcde4ff58f33d4e26fb5)
+        ;
+
+        
+    
+    
+            var marker_fa922a34c7b33b9f8b16117e6726c7b4 = L.marker(
+                [5.538225, 115.850556],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_36d62a70f622a56a76f5b09c4356766c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fa922a34c7b33b9f8b16117e6726c7b4.setIcon(icon_36d62a70f622a56a76f5b09c4356766c);
+        
+    
+        var popup_2e0a225654f3831c0ea42a8e74234f7e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9478d0b361c89981af20735cfcc6b260 = $(`<div id="html_9478d0b361c89981af20735cfcc6b260" style="width: 100.0%; height: 100.0%;">Station: Kimanis, Sabah, Malaysia AQI=22</div>`)[0];
+                popup_2e0a225654f3831c0ea42a8e74234f7e.setContent(html_9478d0b361c89981af20735cfcc6b260);
+            
+        
+
+        marker_fa922a34c7b33b9f8b16117e6726c7b4.bindPopup(popup_2e0a225654f3831c0ea42a8e74234f7e)
+        ;
+
+        
+    
+    
+            var marker_7bb86a62d2df60bff5e8e99fc12ec8b5 = L.marker(
+                [4.424679, 114.012426],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_37de529a9136914611e68032cdffc4c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7bb86a62d2df60bff5e8e99fc12ec8b5.setIcon(icon_37de529a9136914611e68032cdffc4c2);
+        
+    
+        var popup_5df0114b478cb34f23a04da1875baebe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9a51351213f3910eb09f473f69cc157 = $(`<div id="html_d9a51351213f3910eb09f473f69cc157" style="width: 100.0%; height: 100.0%;">Station: Miri, Sarawak, Malaysia AQI=44</div>`)[0];
+                popup_5df0114b478cb34f23a04da1875baebe.setContent(html_d9a51351213f3910eb09f473f69cc157);
+            
+        
+
+        marker_7bb86a62d2df60bff5e8e99fc12ec8b5.bindPopup(popup_5df0114b478cb34f23a04da1875baebe)
+        ;
+
+        
+    
+    
+            var marker_123a0b3e92b2e277144173f82cbc27dc = L.marker(
+                [4.758891, 115.013667],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_53a089531dc530cb49cec9b116c34f60 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_123a0b3e92b2e277144173f82cbc27dc.setIcon(icon_53a089531dc530cb49cec9b116c34f60);
+        
+    
+        var popup_d206966dad53b1750d90d839aa059335 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ffd4a6ac0aef682800d736b70d51742 = $(`<div id="html_2ffd4a6ac0aef682800d736b70d51742" style="width: 100.0%; height: 100.0%;">Station: Limbang, Sarawak, Malaysia AQI=33</div>`)[0];
+                popup_d206966dad53b1750d90d839aa059335.setContent(html_2ffd4a6ac0aef682800d736b70d51742);
+            
+        
+
+        marker_123a0b3e92b2e277144173f82cbc27dc.bindPopup(popup_d206966dad53b1750d90d839aa059335)
+        ;
+
+        
+    
+    
+            var marker_856afdc84c2a8ab4b1b906c35adf2b5d = L.marker(
+                [0.3440181, 109.10197611965],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_e1a014699c18d809bf3641cbe2ae4a66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_856afdc84c2a8ab4b1b906c35adf2b5d.setIcon(icon_e1a014699c18d809bf3641cbe2ae4a66);
+        
+    
+        var popup_b7f18ea40be040618bdb1af407ff3e9d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41e6406f477095aaae8544a35709c5e8 = $(`<div id="html_41e6406f477095aaae8544a35709c5e8" style="width: 100.0%; height: 100.0%;">Station: Mempawah, Indonesia AQI=62</div>`)[0];
+                popup_b7f18ea40be040618bdb1af407ff3e9d.setContent(html_41e6406f477095aaae8544a35709c5e8);
+            
+        
+
+        marker_856afdc84c2a8ab4b1b906c35adf2b5d.bindPopup(popup_b7f18ea40be040618bdb1af407ff3e9d)
+        ;
+
+        
+    
+    
+            var marker_1dc2ae61d87b083b322579caca8060f1 = L.marker(
+                [1.389489, 104.149586],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_4c43a3bbde5127aabd303dccbd7aa603 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1dc2ae61d87b083b322579caca8060f1.setIcon(icon_4c43a3bbde5127aabd303dccbd7aa603);
+        
+    
+        var popup_29db2ef6749c2d92463a8186196a9817 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d783fe27f6feafee7c4c6776d0c68037 = $(`<div id="html_d783fe27f6feafee7c4c6776d0c68037" style="width: 100.0%; height: 100.0%;">Station: Pengerang, Johor, Malaysia AQI=48</div>`)[0];
+                popup_29db2ef6749c2d92463a8186196a9817.setContent(html_d783fe27f6feafee7c4c6776d0c68037);
+            
+        
+
+        marker_1dc2ae61d87b083b322579caca8060f1.bindPopup(popup_29db2ef6749c2d92463a8186196a9817)
+        ;
+
+        
+    
+    
+            var marker_ad1cf8752226aa86bc171bf2947accef = L.marker(
+                [4.6204128, 115.141484],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_d053363b93d28d4293ff1592b473ec0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ad1cf8752226aa86bc171bf2947accef.setIcon(icon_d053363b93d28d4293ff1592b473ec0f);
+        
+    
+        var popup_cc415a624c05389b120b1c09ff52fbfb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94f795dc517289817a191c0ad781dd2c = $(`<div id="html_94f795dc517289817a191c0ad781dd2c" style="width: 100.0%; height: 100.0%;">Station: Temburong, Brunei AQI=16</div>`)[0];
+                popup_cc415a624c05389b120b1c09ff52fbfb.setContent(html_94f795dc517289817a191c0ad781dd2c);
+            
+        
+
+        marker_ad1cf8752226aa86bc171bf2947accef.bindPopup(popup_cc415a624c05389b120b1c09ff52fbfb)
+        ;
+
+        
+    
+    
+            var marker_2fd41c3dd89565bd86c8dc7a0685e8ef = L.marker(
+                [0.19270009999999999, 111.55981182272],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_ca074b550669b5fb34833dbac6eff7b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2fd41c3dd89565bd86c8dc7a0685e8ef.setIcon(icon_ca074b550669b5fb34833dbac6eff7b4);
+        
+    
+        var popup_0f7b03470fa7c7cb7057cb9cd2be775f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bbcf8894071d290c9945daa32b95eef6 = $(`<div id="html_bbcf8894071d290c9945daa32b95eef6" style="width: 100.0%; height: 100.0%;">Station: Sintang, Indonesia AQI=97</div>`)[0];
+                popup_0f7b03470fa7c7cb7057cb9cd2be775f.setContent(html_bbcf8894071d290c9945daa32b95eef6);
+            
+        
+
+        marker_2fd41c3dd89565bd86c8dc7a0685e8ef.bindPopup(popup_0f7b03470fa7c7cb7057cb9cd2be775f)
+        ;
+
+        
+    
+    
+            var marker_12a2bad9e519283f5a972349a1d7b6bc = L.marker(
+                [1.3880078, 103.698064],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_cb49d489b5ac27a5cc305ef74e4c1cd1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_12a2bad9e519283f5a972349a1d7b6bc.setIcon(icon_cb49d489b5ac27a5cc305ef74e4c1cd1);
+        
+    
+        var popup_219a743dd536f040e4e40bf0502c8566 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_adf03eccbcbc0faf82878b7c1770a691 = $(`<div id="html_adf03eccbcbc0faf82878b7c1770a691" style="width: 100.0%; height: 100.0%;">Station: West, Singapore AQI=72</div>`)[0];
+                popup_219a743dd536f040e4e40bf0502c8566.setContent(html_adf03eccbcbc0faf82878b7c1770a691);
+            
+        
+
+        marker_12a2bad9e519283f5a972349a1d7b6bc.bindPopup(popup_219a743dd536f040e4e40bf0502c8566)
+        ;
+
+        
+    
+    
+            var marker_91ac6f46a830a87a7c0f0aa0f768e5fc = L.marker(
+                [2.294794, 102.571595],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_16e8796a6ce99d317a52dd9d6da142be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_91ac6f46a830a87a7c0f0aa0f768e5fc.setIcon(icon_16e8796a6ce99d317a52dd9d6da142be);
+        
+    
+        var popup_2225f60d424f195c6428bfa010f96769 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f7168f765960989ce9d905f4ff40880 = $(`<div id="html_8f7168f765960989ce9d905f4ff40880" style="width: 100.0%; height: 100.0%;">Station: Tangkak, Johor, Malaysia AQI=57</div>`)[0];
+                popup_2225f60d424f195c6428bfa010f96769.setContent(html_8f7168f765960989ce9d905f4ff40880);
+            
+        
+
+        marker_91ac6f46a830a87a7c0f0aa0f768e5fc.bindPopup(popup_2225f60d424f195c6428bfa010f96769)
+        ;
+
+        
+    
+    
+            var marker_0b63f476a8a595ab71b8ae844a4c699e = L.marker(
+                [4.61175, 101.113506],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_8f66f3122d58d5718771b240e9982207 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0b63f476a8a595ab71b8ae844a4c699e.setIcon(icon_8f66f3122d58d5718771b240e9982207);
+        
+    
+        var popup_7f191d90183a7c14aceaca2f918bf78d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a186e0b096fa29139023dce76a3ac62b = $(`<div id="html_a186e0b096fa29139023dce76a3ac62b" style="width: 100.0%; height: 100.0%;">Station: Ipoh AQI=50</div>`)[0];
+                popup_7f191d90183a7c14aceaca2f918bf78d.setContent(html_a186e0b096fa29139023dce76a3ac62b);
+            
+        
+
+        marker_0b63f476a8a595ab71b8ae844a4c699e.bindPopup(popup_7f191d90183a7c14aceaca2f918bf78d)
+        ;
+
+        
+    
+    
+            var marker_2d234130bea6258e0c248bf2e348b7a8 = L.marker(
+                [-7.9551897, 112.6119383],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_bc8c0fd9dce4d50fcb57c7e3ef411869 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2d234130bea6258e0c248bf2e348b7a8.setIcon(icon_bc8c0fd9dce4d50fcb57c7e3ef411869);
+        
+    
+        var popup_f050d2d2eb62a28eff9ecd61ab9ae328 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52aaaa5900bf4608b03b0ac4180f40ff = $(`<div id="html_52aaaa5900bf4608b03b0ac4180f40ff" style="width: 100.0%; height: 100.0%;">Station: Malang, Indonesia AQI=72</div>`)[0];
+                popup_f050d2d2eb62a28eff9ecd61ab9ae328.setContent(html_52aaaa5900bf4608b03b0ac4180f40ff);
+            
+        
+
+        marker_2d234130bea6258e0c248bf2e348b7a8.bindPopup(popup_f050d2d2eb62a28eff9ecd61ab9ae328)
+        ;
+
+        
+    
+    
+            var marker_fb43aaa58ae8101ce922fd01b63795b1 = L.marker(
+                [-5.4559573, 105.08469101016],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_96064cd5c9a91843ed3ec4b7f78ca90a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_fb43aaa58ae8101ce922fd01b63795b1.setIcon(icon_96064cd5c9a91843ed3ec4b7f78ca90a);
+        
+    
+        var popup_141d45903098966c75511c9ea18d34fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d41ab53f2c0148aa782172784cc8817b = $(`<div id="html_d41ab53f2c0148aa782172784cc8817b" style="width: 100.0%; height: 100.0%;">Station: Pesawaran, Indonesia AQI=85</div>`)[0];
+                popup_141d45903098966c75511c9ea18d34fe.setContent(html_d41ab53f2c0148aa782172784cc8817b);
+            
+        
+
+        marker_fb43aaa58ae8101ce922fd01b63795b1.bindPopup(popup_141d45903098966c75511c9ea18d34fe)
+        ;
+
+        
+    
+    
+            var marker_3e89e19d3c7fc4e3a1c1ed94b4642146 = L.marker(
+                [5.298107, 115.232106],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_a6b300635c94c10d0523dc3760fe9e0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3e89e19d3c7fc4e3a1c1ed94b4642146.setIcon(icon_a6b300635c94c10d0523dc3760fe9e0f);
+        
+    
+        var popup_eb505b0a8389047378856ac1c0816511 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e58e5261f72fabf368c6b59534aad974 = $(`<div id="html_e58e5261f72fabf368c6b59534aad974" style="width: 100.0%; height: 100.0%;">Station: Labuan, Wilayah Persekutuan, Malaysia AQI=50</div>`)[0];
+                popup_eb505b0a8389047378856ac1c0816511.setContent(html_e58e5261f72fabf368c6b59534aad974);
+            
+        
+
+        marker_3e89e19d3c7fc4e3a1c1ed94b4642146.bindPopup(popup_eb505b0a8389047378856ac1c0816511)
+        ;
+
+        
+    
+    
+            var marker_427af9eb4b0e86de1b656b904b745888 = L.marker(
+                [5.864467, 118.091089],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_6e220addda68791ef80cf7b8aed64059 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_427af9eb4b0e86de1b656b904b745888.setIcon(icon_6e220addda68791ef80cf7b8aed64059);
+        
+    
+        var popup_233515b692a1ce2217cc11776b6079b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b78ce485f3cb1955766e3b78dce19d43 = $(`<div id="html_b78ce485f3cb1955766e3b78dce19d43" style="width: 100.0%; height: 100.0%;">Station: Sandakan, Sabah, Malaysia AQI=33</div>`)[0];
+                popup_233515b692a1ce2217cc11776b6079b9.setContent(html_b78ce485f3cb1955766e3b78dce19d43);
+            
+        
+
+        marker_427af9eb4b0e86de1b656b904b745888.bindPopup(popup_233515b692a1ce2217cc11776b6079b9)
+        ;
+
+        
+    
+    
+            var marker_28ad68ad9f7c68db7405b8e534fd4f19 = L.marker(
+                [2.493914, 102.862694],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_dde3626fad225daed4f91ffd8958485b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_28ad68ad9f7c68db7405b8e534fd4f19.setIcon(icon_dde3626fad225daed4f91ffd8958485b);
+        
+    
+        var popup_ea7f91724d0c36d7be35b74f5b135d7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9c98ba84ba37d9b0c8008e9cd0088b1 = $(`<div id="html_b9c98ba84ba37d9b0c8008e9cd0088b1" style="width: 100.0%; height: 100.0%;">Station: Segamat, Johor, Malaysia AQI=52</div>`)[0];
+                popup_ea7f91724d0c36d7be35b74f5b135d7f.setContent(html_b9c98ba84ba37d9b0c8008e9cd0088b1);
+            
+        
+
+        marker_28ad68ad9f7c68db7405b8e534fd4f19.bindPopup(popup_ea7f91724d0c36d7be35b74f5b135d7f)
+        ;
+
+        
+    
+    
+            var marker_3b24f5b2f57a447368ab8dc407ea3c87 = L.marker(
+                [-2.9400772, 104.7697591],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_02247798b8f49e662db5fac8fd24309c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3b24f5b2f57a447368ab8dc407ea3c87.setIcon(icon_02247798b8f49e662db5fac8fd24309c);
+        
+    
+        var popup_eac84e3b45520dd35071d6bc0b98c291 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05fa4f2c5a1eb9345dce8916508591c7 = $(`<div id="html_05fa4f2c5a1eb9345dce8916508591c7" style="width: 100.0%; height: 100.0%;">Station: Palembang, Indonesia AQI=-</div>`)[0];
+                popup_eac84e3b45520dd35071d6bc0b98c291.setContent(html_05fa4f2c5a1eb9345dce8916508591c7);
+            
+        
+
+        marker_3b24f5b2f57a447368ab8dc407ea3c87.bindPopup(popup_eac84e3b45520dd35071d6bc0b98c291)
+        ;
+
+        
+    
+    
+            var marker_e6782c856f41f104b414c58ce2299548 = L.marker(
+                [5.329358, 100.443475],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_a4c439a67a6514ae842449d26c2d23bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e6782c856f41f104b414c58ce2299548.setIcon(icon_a4c439a67a6514ae842449d26c2d23bb);
+        
+    
+        var popup_ba3d250c75ed8de0d58e685c3c3fd1fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c938b756544c71374ab539bca98adf4 = $(`<div id="html_8c938b756544c71374ab539bca98adf4" style="width: 100.0%; height: 100.0%;">Station: Perai, Pulau Pinang, Malaysia AQI=36</div>`)[0];
+                popup_ba3d250c75ed8de0d58e685c3c3fd1fb.setContent(html_8c938b756544c71374ab539bca98adf4);
+            
+        
+
+        marker_e6782c856f41f104b414c58ce2299548.bindPopup(popup_ba3d250c75ed8de0d58e685c3c3fd1fb)
+        ;
+
+        
+    
+    
+            var marker_4925a4cfce12d404c36dd4facb1d61c2 = L.marker(
+                [5.356211, 100.30792],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_b7dadc8c599a5373fa680fcbf57459a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4925a4cfce12d404c36dd4facb1d61c2.setIcon(icon_b7dadc8c599a5373fa680fcbf57459a5);
+        
+    
+        var popup_279b29693d0559500c58e54c8a358a36 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_641da30d5a6ca579142ee99c2c5db917 = $(`<div id="html_641da30d5a6ca579142ee99c2c5db917" style="width: 100.0%; height: 100.0%;">Station: Minden, Pulau Pinang, Malaysia AQI=28</div>`)[0];
+                popup_279b29693d0559500c58e54c8a358a36.setContent(html_641da30d5a6ca579142ee99c2c5db917);
+            
+        
+
+        marker_4925a4cfce12d404c36dd4facb1d61c2.bindPopup(popup_279b29693d0559500c58e54c8a358a36)
+        ;
+
+        
+    
+    
+            var marker_81ccd06d4ab8887e8c116f2a958c5f98 = L.marker(
+                [1.219656, 111.464792],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_a50791f1c4fa64b82094ca7c50ee9d23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_81ccd06d4ab8887e8c116f2a958c5f98.setIcon(icon_a50791f1c4fa64b82094ca7c50ee9d23);
+        
+    
+        var popup_5f46d8b08ca644c7aa47e00481a20d84 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb2ce13f993c742c0801eea127063841 = $(`<div id="html_fb2ce13f993c742c0801eea127063841" style="width: 100.0%; height: 100.0%;">Station: Sri Aman, Sarawak, Malaysia AQI=68</div>`)[0];
+                popup_5f46d8b08ca644c7aa47e00481a20d84.setContent(html_fb2ce13f993c742c0801eea127063841);
+            
+        
+
+        marker_81ccd06d4ab8887e8c116f2a958c5f98.bindPopup(popup_5f46d8b08ca644c7aa47e00481a20d84)
+        ;
+
+        
+    
+    
+            var marker_7dd0e4c605813d1a6b559e7f78dfd0da = L.marker(
+                [2.883238, 112.019742],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_d840632531f357a6c7465c10b0c8ce85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7dd0e4c605813d1a6b559e7f78dfd0da.setIcon(icon_d840632531f357a6c7465c10b0c8ce85);
+        
+    
+        var popup_3ecb8b2da73dcb9abd93db2a49631b7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7186b18b26e0599d3ff457914f8960b = $(`<div id="html_f7186b18b26e0599d3ff457914f8960b" style="width: 100.0%; height: 100.0%;">Station: Mukah, Sarawak, Malaysia AQI=38</div>`)[0];
+                popup_3ecb8b2da73dcb9abd93db2a49631b7b.setContent(html_f7186b18b26e0599d3ff457914f8960b);
+            
+        
+
+        marker_7dd0e4c605813d1a6b559e7f78dfd0da.bindPopup(popup_3ecb8b2da73dcb9abd93db2a49631b7b)
+        ;
+
+        
+    
+    
+            var marker_b64e6be42c17cc62f87c10516616e152 = L.marker(
+                [-0.49482319999999996, 117.1436154],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_17776ba1a49fbeccf81e1833151d0f42 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b64e6be42c17cc62f87c10516616e152.setIcon(icon_17776ba1a49fbeccf81e1833151d0f42);
+        
+    
+        var popup_99d2bbc451251b2b6090f43fb956ab7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8e4be09a31a18c460a6bbe0b750b4ca = $(`<div id="html_a8e4be09a31a18c460a6bbe0b750b4ca" style="width: 100.0%; height: 100.0%;">Station: Samarinda, Indonesia AQI=65</div>`)[0];
+                popup_99d2bbc451251b2b6090f43fb956ab7f.setContent(html_a8e4be09a31a18c460a6bbe0b750b4ca);
+            
+        
+
+        marker_b64e6be42c17cc62f87c10516616e152.bindPopup(popup_99d2bbc451251b2b6090f43fb956ab7f)
+        ;
+
+        
+    
+    
+            var marker_7c9e0636d4efeb44e4eb9f0081b7e07c = L.marker(
+                [-2.21, 113.92],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_a8fae9a2d50713c35087b5366d4ceb41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7c9e0636d4efeb44e4eb9f0081b7e07c.setIcon(icon_a8fae9a2d50713c35087b5366d4ceb41);
+        
+    
+        var popup_b913ed1f806b5bd580a73fa5aee6bfdd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bac8fe287b3bcd8f2956a848c1008e1f = $(`<div id="html_bac8fe287b3bcd8f2956a848c1008e1f" style="width: 100.0%; height: 100.0%;">Station: Palangka Raya, Indonesia AQI=110</div>`)[0];
+                popup_b913ed1f806b5bd580a73fa5aee6bfdd.setContent(html_bac8fe287b3bcd8f2956a848c1008e1f);
+            
+        
+
+        marker_7c9e0636d4efeb44e4eb9f0081b7e07c.bindPopup(popup_b913ed1f806b5bd580a73fa5aee6bfdd)
+        ;
+
+        
+    
+    
+            var marker_4e07f68801b0c5dd0cff50be405abf69 = L.marker(
+                [-2.79510965, 115.97125475604],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_7c0908dfdedd5cc1eff246760ec200b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4e07f68801b0c5dd0cff50be405abf69.setIcon(icon_7c0908dfdedd5cc1eff246760ec200b0);
+        
+    
+        var popup_157b1c4d4204bd0cda17a755c9418251 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9c75bf21d4a8a76013a01da2742e558 = $(`<div id="html_e9c75bf21d4a8a76013a01da2742e558" style="width: 100.0%; height: 100.0%;">Station: Kotabaru, Indonesia AQI=53</div>`)[0];
+                popup_157b1c4d4204bd0cda17a755c9418251.setContent(html_e9c75bf21d4a8a76013a01da2742e558);
+            
+        
+
+        marker_4e07f68801b0c5dd0cff50be405abf69.bindPopup(popup_157b1c4d4204bd0cda17a755c9418251)
+        ;
+
+        
+    
+    
+            var marker_5187e21fdd9502af940bb58485b6f512 = L.marker(
+                [4.333131, 113.99486],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_e6fb7f41fa3c1aafef57ec9f9bf862bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5187e21fdd9502af940bb58485b6f512.setIcon(icon_e6fb7f41fa3c1aafef57ec9f9bf862bb);
+        
+    
+        var popup_df093fb20345592eb1c9ec563f2d6ab1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a451416c00fabf88406b95b9ecf336e = $(`<div id="html_5a451416c00fabf88406b95b9ecf336e" style="width: 100.0%; height: 100.0%;">Station: Miri AQI=44</div>`)[0];
+                popup_df093fb20345592eb1c9ec563f2d6ab1.setContent(html_5a451416c00fabf88406b95b9ecf336e);
+            
+        
+
+        marker_5187e21fdd9502af940bb58485b6f512.bindPopup(popup_df093fb20345592eb1c9ec563f2d6ab1)
+        ;
+
+        
+    
+    
+            var marker_ad9a13ed058d34278a7a83324eeb4d0a = L.marker(
+                [1.5622289999999999, 110.388958],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_e2973b7244cb7628c25537b603e4dd9a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ad9a13ed058d34278a7a83324eeb4d0a.setIcon(icon_e2973b7244cb7628c25537b603e4dd9a);
+        
+    
+        var popup_d23d2097d6b45b3eb6abd1e2c5eb9757 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de920a0e77798a38f94e0aaf8da8443b = $(`<div id="html_de920a0e77798a38f94e0aaf8da8443b" style="width: 100.0%; height: 100.0%;">Station: Kuching, Sarawak, Malaysia AQI=84</div>`)[0];
+                popup_d23d2097d6b45b3eb6abd1e2c5eb9757.setContent(html_de920a0e77798a38f94e0aaf8da8443b);
+            
+        
+
+        marker_ad9a13ed058d34278a7a83324eeb4d0a.bindPopup(popup_d23d2097d6b45b3eb6abd1e2c5eb9757)
+        ;
+
+        
+    
+    
+            var marker_fec3c268bc8ff94c2dc031e88b332b24 = L.marker(
+                [4.262121, 103.425778],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_9485912c9d5481ded36509ae9ecc9065 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_fec3c268bc8ff94c2dc031e88b332b24.setIcon(icon_9485912c9d5481ded36509ae9ecc9065);
+        
+    
+        var popup_cacc83e17f32d390629789c0b93df89f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80bf08d3ce48b0a39ca562c261a16408 = $(`<div id="html_80bf08d3ce48b0a39ca562c261a16408" style="width: 100.0%; height: 100.0%;">Station: Kemaman, Terengganu, Malaysia AQI=63</div>`)[0];
+                popup_cacc83e17f32d390629789c0b93df89f.setContent(html_80bf08d3ce48b0a39ca562c261a16408);
+            
+        
+
+        marker_fec3c268bc8ff94c2dc031e88b332b24.bindPopup(popup_cacc83e17f32d390629789c0b93df89f)
+        ;
+
+        
+    
+    
+            var marker_ff87cfba674d2ee353fc9d24987a59ec = L.marker(
+                [5.763873, 101.067903],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_530a72bc32afbbe545cda0d53a8a479d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ff87cfba674d2ee353fc9d24987a59ec.setIcon(icon_530a72bc32afbbe545cda0d53a8a479d);
+        
+    
+        var popup_03b897a004b669d1e605edf89cdcdac3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ee4fd0821ab0a8ca2d2cfb9af86f9c7 = $(`<div id="html_4ee4fd0821ab0a8ca2d2cfb9af86f9c7" style="width: 100.0%; height: 100.0%;">Station: Betong, Thailand (ต.เบตง อ.เบตง จ.ยะลา) AQI=46</div>`)[0];
+                popup_03b897a004b669d1e605edf89cdcdac3.setContent(html_4ee4fd0821ab0a8ca2d2cfb9af86f9c7);
+            
+        
+
+        marker_ff87cfba674d2ee353fc9d24987a59ec.bindPopup(popup_03b897a004b669d1e605edf89cdcdac3)
+        ;
+
+        
+    
+    
+            var marker_7bf7960ad657163b723f1e048ec7ab44 = L.marker(
+                [-0.8634105, 131.2544805],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_e48eb3f7f8c14357a8bcb72aaf417e33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7bf7960ad657163b723f1e048ec7ab44.setIcon(icon_e48eb3f7f8c14357a8bcb72aaf417e33);
+        
+    
+        var popup_abb2422086d40bbe10d15c241c154627 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40a3909c2be8003773ca407a949ec78a = $(`<div id="html_40a3909c2be8003773ca407a949ec78a" style="width: 100.0%; height: 100.0%;">Station: Sorong, Indonesia AQI=49</div>`)[0];
+                popup_abb2422086d40bbe10d15c241c154627.setContent(html_40a3909c2be8003773ca407a949ec78a);
+            
+        
+
+        marker_7bf7960ad657163b723f1e048ec7ab44.bindPopup(popup_abb2422086d40bbe10d15c241c154627)
+        ;
+
+        
+    
+    
+            var marker_3d7aa990fd4948ac5d3c3a64b44160a1 = L.marker(
+                [3.177084, 113.041091],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_d173508db6ed8f8891c065107003c754 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3d7aa990fd4948ac5d3c3a64b44160a1.setIcon(icon_d173508db6ed8f8891c065107003c754);
+        
+    
+        var popup_62de711fd6ca57bd1ca5d88644950352 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e07ed4fecbc28181ce4f347ce2fe57f0 = $(`<div id="html_e07ed4fecbc28181ce4f347ce2fe57f0" style="width: 100.0%; height: 100.0%;">Station: Bintulu, Sarawak, Malaysia AQI=53</div>`)[0];
+                popup_62de711fd6ca57bd1ca5d88644950352.setContent(html_e07ed4fecbc28181ce4f347ce2fe57f0);
+            
+        
+
+        marker_3d7aa990fd4948ac5d3c3a64b44160a1.bindPopup(popup_62de711fd6ca57bd1ca5d88644950352)
+        ;
+
+        
+    
+    
+            var marker_983cf731b12a59be9133684a79ed91c3 = L.marker(
+                [4.8140524, 114.6608562],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_77794fdf6603648fcf5e1419d32adea7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_983cf731b12a59be9133684a79ed91c3.setIcon(icon_77794fdf6603648fcf5e1419d32adea7);
+        
+    
+        var popup_6f298c31d1aa330a2135b3f983d8b61a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7981af1de5569e8dc1c418e8fd9b1bfb = $(`<div id="html_7981af1de5569e8dc1c418e8fd9b1bfb" style="width: 100.0%; height: 100.0%;">Station: Pekan Tutong, Brunei AQI=15</div>`)[0];
+                popup_6f298c31d1aa330a2135b3f983d8b61a.setContent(html_7981af1de5569e8dc1c418e8fd9b1bfb);
+            
+        
+
+        marker_983cf731b12a59be9133684a79ed91c3.bindPopup(popup_6f298c31d1aa330a2135b3f983d8b61a)
+        ;
+
+        
+    
+    
+            var marker_514c8c1d3b3d66902feb6ee27f481e67 = L.marker(
+                [2.037882, 103.312063],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_e6faea901ff5fcfa534c3d55b0360efc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_514c8c1d3b3d66902feb6ee27f481e67.setIcon(icon_e6faea901ff5fcfa534c3d55b0360efc);
+        
+    
+        var popup_c2b1b9860a4e31b1d1ea6ae9002061ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_811ea0e97ddd5c5c06f4155f6c47f32a = $(`<div id="html_811ea0e97ddd5c5c06f4155f6c47f32a" style="width: 100.0%; height: 100.0%;">Station: Kluang, Johor, Malaysia AQI=56</div>`)[0];
+                popup_c2b1b9860a4e31b1d1ea6ae9002061ff.setContent(html_811ea0e97ddd5c5c06f4155f6c47f32a);
+            
+        
+
+        marker_514c8c1d3b3d66902feb6ee27f481e67.bindPopup(popup_c2b1b9860a4e31b1d1ea6ae9002061ff)
+        ;
+
+        
+    
+    
+            var marker_a334c80ce334daff72441c2750dd9c18 = L.marker(
+                [2.821692, 101.811486],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_182c23411ef526130664abf206a68636 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a334c80ce334daff72441c2750dd9c18.setIcon(icon_182c23411ef526130664abf206a68636);
+        
+    
+        var popup_7c7938a329761223ff39b8f6f9d7b92a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fdb143376728e8ad054e389dd6fed044 = $(`<div id="html_fdb143376728e8ad054e389dd6fed044" style="width: 100.0%; height: 100.0%;">Station: Nilai, Negeri Sembilan, Malaysia AQI=57</div>`)[0];
+                popup_7c7938a329761223ff39b8f6f9d7b92a.setContent(html_fdb143376728e8ad054e389dd6fed044);
+            
+        
+
+        marker_a334c80ce334daff72441c2750dd9c18.bindPopup(popup_7c7938a329761223ff39b8f6f9d7b92a)
+        ;
+
+        
+    
+    
+            var marker_13f1e813e13bc2fe05e8deb92416eaf2 = L.marker(
+                [5.39817, 100.403947],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_72ce701f84d7539d1e3820568b5d5f75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_13f1e813e13bc2fe05e8deb92416eaf2.setIcon(icon_72ce701f84d7539d1e3820568b5d5f75);
+        
+    
+        var popup_566c61d235a20f622064ea272f4c65da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5adab91ca9f0a562804978ff3775b7d0 = $(`<div id="html_5adab91ca9f0a562804978ff3775b7d0" style="width: 100.0%; height: 100.0%;">Station: Seberang Jaya 2, Perai, Pulau Pinang, Malaysia AQI=30</div>`)[0];
+                popup_566c61d235a20f622064ea272f4c65da.setContent(html_5adab91ca9f0a562804978ff3775b7d0);
+            
+        
+
+        marker_13f1e813e13bc2fe05e8deb92416eaf2.bindPopup(popup_566c61d235a20f622064ea272f4c65da)
+        ;
+
+        
+    
+    
+            var marker_ae265690dde8df91845b144df3e3247d = L.marker(
+                [5.629631, 100.467771],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_a8f28ae05561d9e92a42bc5957cfc321 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ae265690dde8df91845b144df3e3247d.setIcon(icon_a8f28ae05561d9e92a42bc5957cfc321);
+        
+    
+        var popup_22b1797d1396dcd174ddede3bbbe63f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c16f915a5181318e0f88c143ab73706 = $(`<div id="html_2c16f915a5181318e0f88c143ab73706" style="width: 100.0%; height: 100.0%;">Station: Bakar Arang, Sg. Petani, Kedah, Malaysia AQI=18</div>`)[0];
+                popup_22b1797d1396dcd174ddede3bbbe63f3.setContent(html_2c16f915a5181318e0f88c143ab73706);
+            
+        
+
+        marker_ae265690dde8df91845b144df3e3247d.bindPopup(popup_22b1797d1396dcd174ddede3bbbe63f3)
+        ;
+
+        
+    
+    
+            var marker_9b21d9a09d8294b124a1c578abcd740d = L.marker(
+                [-1.4781958, 103.6669021],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_433301b3fdab8494d91fa4e7a0cc0493 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9b21d9a09d8294b124a1c578abcd740d.setIcon(icon_433301b3fdab8494d91fa4e7a0cc0493);
+        
+    
+        var popup_376e645acaea57a056c59d89cd046c0d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8c2351ec47b62da4701be95dd269b47 = $(`<div id="html_e8c2351ec47b62da4701be95dd269b47" style="width: 100.0%; height: 100.0%;">Station: Muaro Jambi, Indonesia AQI=-</div>`)[0];
+                popup_376e645acaea57a056c59d89cd046c0d.setContent(html_e8c2351ec47b62da4701be95dd269b47);
+            
+        
+
+        marker_9b21d9a09d8294b124a1c578abcd740d.bindPopup(popup_376e645acaea57a056c59d89cd046c0d)
+        ;
+
+        
+    
+    
+            var marker_96308dbd9260ab88fab499faac6e7cbd = L.marker(
+                [3.537059, 113.295168],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_3f52bb869fcb13f77032234b14e51b1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_96308dbd9260ab88fab499faac6e7cbd.setIcon(icon_3f52bb869fcb13f77032234b14e51b1b);
+        
+    
+        var popup_5744dce75d5fbbe863e3bbb714f145a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a8b312ffb22158882b40f6b43961859 = $(`<div id="html_7a8b312ffb22158882b40f6b43961859" style="width: 100.0%; height: 100.0%;">Station: Samalaju, Sarawak, Malaysia AQI=52</div>`)[0];
+                popup_5744dce75d5fbbe863e3bbb714f145a5.setContent(html_7a8b312ffb22158882b40f6b43961859);
+            
+        
+
+        marker_96308dbd9260ab88fab499faac6e7cbd.bindPopup(popup_5744dce75d5fbbe863e3bbb714f145a5)
+        ;
+
+        
+    
+    
+            var marker_8d07749839222728f4125037f014576f = L.marker(
+                [1.3645924, 103.9477547],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_4fac37a098f3585c3e6c00310ddb5ff9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_8d07749839222728f4125037f014576f.setIcon(icon_4fac37a098f3585c3e6c00310ddb5ff9);
+        
+    
+        var popup_f59bafd796f8d65e517a16fd5f315913 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3deaaaa26b5a7d770ab82c5cde5f3c00 = $(`<div id="html_3deaaaa26b5a7d770ab82c5cde5f3c00" style="width: 100.0%; height: 100.0%;">Station: East, Singapore AQI=72</div>`)[0];
+                popup_f59bafd796f8d65e517a16fd5f315913.setContent(html_3deaaaa26b5a7d770ab82c5cde5f3c00);
+            
+        
+
+        marker_8d07749839222728f4125037f014576f.bindPopup(popup_f59bafd796f8d65e517a16fd5f315913)
+        ;
+
+        
+    
+    
+            var marker_761b0784012ad7e9a859081eef07c54c = L.marker(
+                [2.258519, 102.172683],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_d672f045bfab9749f6cb2a9a54fe4086 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_761b0784012ad7e9a859081eef07c54c.setIcon(icon_d672f045bfab9749f6cb2a9a54fe4086);
+        
+    
+        var popup_19cfc0fef39bbff85c4bb8bd0ce86b9d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0aab8e5cc3436ed4ae98002dd52d73f4 = $(`<div id="html_0aab8e5cc3436ed4ae98002dd52d73f4" style="width: 100.0%; height: 100.0%;">Station: Bukit Rambai, Melaka, Malaysia AQI=52</div>`)[0];
+                popup_19cfc0fef39bbff85c4bb8bd0ce86b9d.setContent(html_0aab8e5cc3436ed4ae98002dd52d73f4);
+            
+        
+
+        marker_761b0784012ad7e9a859081eef07c54c.bindPopup(popup_19cfc0fef39bbff85c4bb8bd0ce86b9d)
+        ;
+
+        
+    
+    
+            var marker_261a55b9dec89e3e464226367fe8c019 = L.marker(
+                [3.5951956, 98.6722227],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_20d8292d61b728319ba1e4e98a8ab4f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_261a55b9dec89e3e464226367fe8c019.setIcon(icon_20d8292d61b728319ba1e4e98a8ab4f1);
+        
+    
+        var popup_d71a224113795a9d649489eba9825463 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_496cac81c0671344e9a5704f39834828 = $(`<div id="html_496cac81c0671344e9a5704f39834828" style="width: 100.0%; height: 100.0%;">Station: Medan, Indonesia AQI=142</div>`)[0];
+                popup_d71a224113795a9d649489eba9825463.setContent(html_496cac81c0671344e9a5704f39834828);
+            
+        
+
+        marker_261a55b9dec89e3e464226367fe8c019.bindPopup(popup_d71a224113795a9d649489eba9825463)
+        ;
+
+        
+    
+    
+            var marker_8bf022fd40afc8167a02046d5022f95f = L.marker(
+                [4.200344, 100.663358],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_4930f888407f8782ab6e967d1a33aa18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8bf022fd40afc8167a02046d5022f95f.setIcon(icon_4930f888407f8782ab6e967d1a33aa18);
+        
+    
+        var popup_c59a58db1a24bd23c8fa34483ad56050 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1da422f7a41cf871644ed546e74ac956 = $(`<div id="html_1da422f7a41cf871644ed546e74ac956" style="width: 100.0%; height: 100.0%;">Station: Seri Manjung, Perak, Malaysia AQI=43</div>`)[0];
+                popup_c59a58db1a24bd23c8fa34483ad56050.setContent(html_1da422f7a41cf871644ed546e74ac956);
+            
+        
+
+        marker_8bf022fd40afc8167a02046d5022f95f.bindPopup(popup_c59a58db1a24bd23c8fa34483ad56050)
+        ;
+
+        
+    
+    
+            var marker_f2cc17e3bc2cf5f6afb373d3715e870f = L.marker(
+                [4.629444, 101.11665],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_5c49f85db14f11612d29e0a0c017a309 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f2cc17e3bc2cf5f6afb373d3715e870f.setIcon(icon_5c49f85db14f11612d29e0a0c017a309);
+        
+    
+        var popup_bf14bddc440fb30598184078ddf9bfb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_065e218a650f6befefed5c7e255fb759 = $(`<div id="html_065e218a650f6befefed5c7e255fb759" style="width: 100.0%; height: 100.0%;">Station: Jalan Tasek, Ipoh, Perak, Malaysia AQI=50</div>`)[0];
+                popup_bf14bddc440fb30598184078ddf9bfb7.setContent(html_065e218a650f6befefed5c7e255fb759);
+            
+        
+
+        marker_f2cc17e3bc2cf5f6afb373d3715e870f.bindPopup(popup_bf14bddc440fb30598184078ddf9bfb7)
+        ;
+
+        
+    
+    
+            var marker_c350e6419787835b9308811738146ff0 = L.marker(
+                [4.89885, 100.679106],
+                {}
+            ).addTo(map_1bef3d457644e2f79c04f2eac1e5d3e5);
+        
+    
+            var icon_a5c406645865d142abd0a96aec7f92a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c350e6419787835b9308811738146ff0.setIcon(icon_a5c406645865d142abd0a96aec7f92a0);
+        
+    
+        var popup_ff2927a1dfa340b9792e37328fda1eb4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b296ed1360950884e627c95d4f030b4e = $(`<div id="html_b296ed1360950884e627c95d4f030b4e" style="width: 100.0%; height: 100.0%;">Station: Kg. Air Putih, Taiping, Perak, Malaysia AQI=28</div>`)[0];
+                popup_ff2927a1dfa340b9792e37328fda1eb4.setContent(html_b296ed1360950884e627c95d4f030b4e);
+            
+        
+
+        marker_c350e6419787835b9308811738146ff0.bindPopup(popup_ff2927a1dfa340b9792e37328fda1eb4)
+        ;
+
+        
+    
+</script>
+</html>
